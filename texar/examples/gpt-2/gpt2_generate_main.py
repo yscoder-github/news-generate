@@ -25,6 +25,7 @@ import texar as tx
 
 from utils import model_utils, processor
 
+
 # pylint: disable=invalid-name, too-many-locals, too-many-statements, no-member
 # pylint: disable=too-many-branches
 

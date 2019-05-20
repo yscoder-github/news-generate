@@ -67,7 +67,11 @@ There are various flags for controlling the samples:
 ```
 python3 src/generate_unconditional_samples.py --top_k 40 --temperature 0.7 | tee /tmp/samples
 ```
-
+in my machine 
+```
+conda activate transformer 
+python3.5 src/generate_unconditional_samples.py --top_k 40 --temperature 0.7 | tee /tmp/samples
+```
 To check flag descriptions, use:
 ```
 python3 src/generate_unconditional_samples.py -- --help
