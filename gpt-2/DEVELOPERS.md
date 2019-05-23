@@ -309,6 +309,36 @@ class GPT2Config(object):
 
 
 
+## My experience ## 
+0. make some sample news data for train 
+train data path : /media/yinshuai/d8644f6c-5a97-4e12-909b-b61d2271b61c/news150w/news2016zh_train.json
+train script: prepare.py 
+```python 
+/home/yinshuai/anaconda3/bin/python /home/yinshuai/桌面/nlp/news-generate/gpt-2/src/prepare.py
+``` 
+1. encode train data into npz format
 
-关注公号：安迪的写作间(andy_writing) ，更多自然语言处理，深度学习，AI，写作等等等
+``` python 
+python3.5 encode.py /media/yinshuai/d8644f6c-5a97-4e12-909b-b61d2271b61c/news150w/news2016zh_train.txt  /media/yinshuai/d8644f6c-5a97-4e12-909b-b61d2271b61c/news150w/news2016zh_train_txt.npz 
 
+
+
+data/friends.txt data/friends.txt.npz
+
+``` 
+``` python 
+python3.5 train.py --dataset  /media/yinshuai/d8644f6c-5a97-4e12-909b-b61d2271b61c/news150w/news2016zh_train.text 
+``` 
+
+when modify training dataset ,please remove ckpg path 
+
+
+
+## Some Point should pay attention to ## 
+1. Whether we have learned something ? learning curve picture ?　 
+2. the npz is useful to save memory ? 
+3. in this example, we use 10000 news to do train job, how many gpu memory used? that to say ,how gpt-2 controled 
+the batch size ? 
+4. epoch is xx ? HOw many iters ,this is not controled by us, and how the code is control？
+
+5. which loss we could accept? or to say, when the news is readable, the loss is xxx ? used time is ?? 
