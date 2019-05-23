@@ -15,6 +15,11 @@ To train a NER model,
 
     python ner.py
 
+## My Own Run Script ##
+
+    python ner.py --data_path=
+
+
 The model will begin training, and will evaluate on the validation data periodically, and evaluate on the test data after the training is done. 
 
 ## Results ##

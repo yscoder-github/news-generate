@@ -43,3 +43,9 @@ All configs are (mostly) the same as those in the [seq2seq_attn example](../seq2
 ## Results ##
 
 The code is for demonstrating Texar API. With pure policy gradient and without MLE pretraining the model collapse very quickly. 
+
+
+
+
+
+

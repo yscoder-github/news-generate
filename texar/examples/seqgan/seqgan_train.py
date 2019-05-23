@@ -58,7 +58,7 @@ def _main(_):
     g_embedder = tx.modules.WordEmbedder(vocab_size=vocab_size,
                                          hparams=config.emb_hparams)
     input_embed = g_embedder(data_batch["text_ids"][:, :-1])
-
+    
     if config.enc_keep_prob_in < 1:
         input_embed = tf.nn.dropout(
             input_embed, tx.utils.switch_dropout(config.enc_keep_prob_in))
