@@ -18,12 +18,16 @@ from keras.utils import np_utils
 
 # ## Loading of Data
 
+# In[72]:
+
 
 text = (open("./sonnets.txt").read())
 text=text.lower()
 
 
+# ## Creating character/word mappings
 
+# In[73]:
 
 
 characters = sorted(list(set(text)))
@@ -77,9 +81,9 @@ model.compile(loss='categorical_crossentropy', optimizer='adam')
 # In[77]:
 
 
-model.fit(X_modified, Y_modified, epochs=100, batch_size=50)
+# model.fit(X_modified, Y_modified, epochs=100, batch_size=50)
 
-model.save_weights('text_generator_gigantic.h5')
+# model.save_weights('text_generator_gigantic.h5')
 
 
 # In[81]:
