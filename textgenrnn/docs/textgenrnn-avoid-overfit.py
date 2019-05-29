@@ -32,8 +32,9 @@ textgen.train_from_file(file_path, new_model=True, num_epochs=5, gen_epochs=5)
 
 file_path = "../datasets/reddit_rarepuppers_politics_2000.txt"
 
-textgen.reset()
-textgen.train_from_file(file_path, new_model=True, num_epochs=5, gen_epochs=5, train_size=0.8)
+# textgen.reset()
+# textgen.train_from_file(file_path, new_model=True, num_epochs=5, gen_epochs=1, train_size=0.8)
+
 
 
 # Additionally, you can add a `dropout`, which drops out that proportion of characters in a sequence for a given epoch. This forces the model to weigh remaining characters more efficiently.
@@ -44,6 +45,6 @@ textgen.train_from_file(file_path, new_model=True, num_epochs=5, gen_epochs=5, t
 file_path = "../datasets/reddit_rarepuppers_politics_2000.txt"
 
 textgen.reset()
-textgen.train_from_file(file_path, new_model=True, num_epochs=5, gen_epochs=5, train_size=0.8, dropout=0.2)
+textgen.train_from_file(file_path, new_model=True, num_epochs=100, gen_epochs=1, train_size=0.8, dropout=0.2)
 
 

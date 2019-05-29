@@ -13,15 +13,15 @@
 
 from textgenrnn import textgenrnn
 
-textgen = textgenrnn()
 
 textgen = textgenrnn(name="new_model")
 
 
 fulltext_path = "/media/yinshuai/d8644f6c-5a97-4e12-909b-b61d2271b61c/news150w/news2016zh_train.text"
 textgen.reset()
-textgen.train_from_largetext_file(fulltext_path, new_model=True, num_epochs=1)
+textgen.train_from_largetext_file(fulltext_path, new_model=False, num_epochs=10,save_epochs=1,gen_epochs=1)
 
+# textgen.generate_samples()
 
 # Training on text at the word level works great, although it's strongly recommended to reduce the `max_length` and `max_gen_length` during training!
 

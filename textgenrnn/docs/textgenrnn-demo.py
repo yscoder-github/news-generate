@@ -179,4 +179,3 @@ textgen.train_from_largetext_file(fulltext_path, new_model=True, num_epochs=1,
                                   max_gen_length=50,
                                   max_words=5000)
 
-

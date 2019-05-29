@@ -112,7 +112,6 @@ def train():
   # prepare dataset
   print("Preparing data in %s" % gConfig['working_directory'])
   enc_train, dec_train, enc_dev, dec_dev, _, _ = data_utils.prepare_custom_data(gConfig['working_directory'],gConfig['train_enc'],gConfig['train_dec'],gConfig['test_enc'],gConfig['test_dec'],gConfig['enc_vocab_size'],gConfig['dec_vocab_size'])
-  #raise ValueError("SS")
   # setup config to use BFC allocator
   config = tf.ConfigProto()
   config.gpu_options.allocator_type = 'BFC'
