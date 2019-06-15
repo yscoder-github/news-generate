@@ -1,5 +1,9 @@
 # news-generate
 
+## some useful method to generate news！
+
+###1.gpt_2
+
 ### Some useful toos and project 
 texar/examples/gpt-2 
 
