@@ -1,4 +1,6 @@
-# news-generate
+# news-generate 机器创作
+
+# 2019-06-21 开始，这个项目会被重新维护整理起来!敬请期待。 
 
 ## some useful method to generate news！
 
